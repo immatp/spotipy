@@ -1,0 +1,37 @@
+SpotyPy
+
+Nos contrato una empresa para crear el sistemas Spotipy
+para desarrollar su sistemas de audio por streaming
+
+- usuari@ sin cuenta se tiene que poder registrar con un email no usado
+- usuari@ con cuenta se loguea
+
+- usuari@ con cuenta sube un tema
+- usuari@ con elimina uno de sus temas
+- usuari@ obtiene informacion de un tema
+
+
+
+- usuari@ crea un playlist
+- usuari@ elimina un playlist
+
+- usuari@ agrega tema a un playlist
+- usuari@ elimina tema a un playlist
+- usuari@ obtiene los temas de un playlist
+
+- usuari@ califica un tema
+- usuari@ califica un playlist
+
+- usuari@ copia un playlist de otro usuario
+- usuari@ elimina un playlist copiado
+
+- usuari@ obtiene todos los temas de un artista
+- usuari@ obtine el score de un artista (el promedio se el score se sus temas)
+
+- usuari@ busca todos los temas de un genero
+- usuari@ busca todos los temas de un genero y artista
+
+
+
+
+

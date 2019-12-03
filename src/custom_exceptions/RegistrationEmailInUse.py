@@ -1,0 +1,2 @@
+class RegistrationEmailInUse(Exception):
+    pass
