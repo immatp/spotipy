@@ -11,7 +11,7 @@ class LoginTestCase(unittest.TestCase):
         name_new_user = "Carla"
         last_name_new_user = "Lopez"
         email_new_user = "carla_lopez@gmail.com"
-        self._pass_new_user = "car1234"
+        self._pass_new_user = "car1234.+-p"
         self.__user_carla = User(name_new_user,
                                  last_name_new_user,
                                  email_new_user,

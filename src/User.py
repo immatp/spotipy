@@ -20,3 +20,7 @@ class User(object):
 
     def is_valid_password(self, password):
         return self.__password == password
+
+
+    def has_secure_password(self):
+        return len(self.__password) >= 10
