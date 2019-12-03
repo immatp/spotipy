@@ -1,0 +1,2 @@
+class NotAllowedUserForDeleteSong(Exception):
+    pass
