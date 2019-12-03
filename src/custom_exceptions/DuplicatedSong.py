@@ -1,0 +1,2 @@
+class DuplicatedSong(Exception):
+    pass

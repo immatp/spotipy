@@ -1,0 +1,2 @@
+class GENRES:
+    POP = "pop"
