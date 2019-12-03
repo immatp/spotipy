@@ -1,5 +1,5 @@
 from src.custom_exceptions.RegistrationEmailInUse import RegistrationEmailInUse
-
+from src.custom_exceptions.InsecureRegistrationPassword import InsecureRegistrationPassword
 
 class SpotiPy:
 
@@ -8,7 +8,10 @@ class SpotiPy:
 
     def register_user(self, new_user):
         if self.__is_available_email(new_user.email):
-            self.__users.append(new_user)
+            if new_user.has_secure_password():
+                self.__users.append(new_user)
+            else:
+                raise InsecureRegistrationPassword()
         else:
             raise RegistrationEmailInUse(new_user.email)
 
@@ -27,5 +30,6 @@ class SpotiPy:
             return None
         else:
             return list(filter(lambda u: u.email == email, self.__users))[0]
+
 
 

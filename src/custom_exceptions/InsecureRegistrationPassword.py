@@ -1,0 +1,2 @@
+class InsecureRegistrationPassword(Exception):
+    pass
