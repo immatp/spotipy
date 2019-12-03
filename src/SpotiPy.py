@@ -17,3 +17,15 @@ class SpotiPy:
 
     def is_registered(self,email):
         return not self.__is_available_email(email)
+
+    def is_valid_login(self, email, password):
+        user = self.__get_user_by_email(email)
+        return user and user.is_valid_password(password)
+
+    def __get_user_by_email(self, email):
+        if not self.is_registered(email):
+            return None
+        else:
+            return list(filter(lambda u: u.email == email, self.__users))[0]
+
+
