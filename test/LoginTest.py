@@ -18,8 +18,6 @@ class LoginTestCase(unittest.TestCase):
                                  self._pass_new_user)
         self.__spotipy.register_user(self.__user_carla)
 
-
-
     def test_usuario_registrato_se_puede_loguear(self):
         self.assertTrue(self.__spotipy.is_valid_login(self.__user_carla.email,
                                                       self._pass_new_user))
